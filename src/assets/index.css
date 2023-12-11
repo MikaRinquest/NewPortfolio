@@ -1,0 +1,19 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Determination";
+  src: url("../../public/fonts/DeterminationMonoWebRegular-Z5oq.ttf");
+}
+
+@font-face {
+  font-family: "Operator";
+  src: url("../../public/fonts/8bitoperator_jve.ttf");
+}
+
+//The above adds locally donwloaded fonts to tailwind
+
+@layer base {
+}
