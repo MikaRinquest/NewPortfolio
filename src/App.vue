@@ -1,6 +1,8 @@
 <template>
-  <Navbar />
-  <router-view class="prose max-w-none" />
+  <Navbar class="z-10" />
+  <router-view
+    class="prose max-w-none prose-headings:text-white prose-headings:font-normal h-screen"
+  />
   <!--Prose is tailwind typography to target specific sections-->
 </template>
 <script>
@@ -31,11 +33,11 @@ nav {
 }
 
 nav a {
-  font-weight: bold;
-  color: #2c3e50;
+  font-weight: normal;
+  color: white;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #ffff00;
 }
 </style>

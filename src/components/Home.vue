@@ -1,17 +1,17 @@
 <template>
-  <section>
-    <div class="container">
-      <h1>Hi, I'm</h1>
-      <h2>
+  <section class="flex items-center justify-center h-1/2">
+    <div class="container w-1/2 flex flex-col items-center">
+      <h1 class="mb-1 text-left w-3/4">Hi,I'm</h1>
+      <h1 class="my-0 text-left w-3/4">
         <span class="typed-text">{{ typeValue }}</span
         ><!--The text that will be displayed-->
         <span class="blinking-cursor">|</span
         ><!--The line to simulate typing-->
-        <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span
-        ><!---->
-      </h2>
+      </h1>
     </div>
-    <div></div>
+    <div class="container w-1/2 flex justify-center">
+      <img src="" alt="Mika Rinquest" />
+    </div>
   </section>
 </template>
 <script>
@@ -20,10 +20,10 @@ export default {
     return {
       typeValue: "", //This is the word that will be displayed in the browser
       typeStatus: false,
-      displayTextArray: ["Mika Rinquest", "Aspiring Web Developer"], //The text that will be looping
-      typingSpeed: 150, //The speed that each character will appear
-      erasingSpeed: 150, //The speed that each character will disapper
-      newTextDelay: 150, //How long the new word will take to start appearing
+      displayTextArray: ["Mika Rinquest", "an Aspiring Web Developer"], //The text that will be looping
+      typingSpeed: 170, //The speed that each character will appear
+      erasingSpeed: 120, //The speed that each character will disapper
+      newTextDelay: 170, //How long the new word will take to start appearing
       displayTextArrayIndex: 0,
       charIndex: 0,
     };
@@ -84,7 +84,7 @@ export default {
 /* Keyframes for the cursor blinking effect */
 .blinking-cursor {
   font-size: 25px;
-  color: black;
+  color: whitesmoke;
   animation: blink 1s step-end infinite;
   -webkit-animation: blink 1s step-end infinite; /*Ensure that the animation will run in these browsers(chrome and safari)*/
   -moz-animation: blink 1s step-end infinite; /*Ensure that the animation will run in these browsers(firefox)*/
@@ -101,8 +101,8 @@ export default {
     /* At the end of the animation, the color of the 'cursor' must be invisible */
   }
   50% {
-    color: black;
-    /* Once the animation is halfway finished, the cursor color must be black */
+    color: whitesmoke;
+    /* Once the animation is halfway finished, the cursor color must be whitesmoke */
   }
 }
 </style>

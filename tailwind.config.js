@@ -26,6 +26,9 @@ module.exports = {
             p: {
               fontFamily: ["Operator"],
             },
+            button: {
+              fontFamily: ["Operator"],
+            },
           },
         },
       },
